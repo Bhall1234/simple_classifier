@@ -11,9 +11,9 @@ from PIL import Image
 im = np.array(Image.open('test.jpeg').convert('L')) #you can pass multiple arguments in single line
 #print(type(im))
 
-grey_image = Image.fromarray(im).save('gr_kolala.png')
+grey_image = Image.fromarray(im).save('test_grey.png')
     
-image = Image.open("gr_kolala.png")
+image = Image.open("test_grey.png")
 
 data = np.asarray(image)
     #print(type(data))
@@ -25,7 +25,7 @@ image2 = Image.fromarray(data)
     #print (image2.size)
 
 # Image 2
-im2 = np.array(Image.open('test.jpeg').convert('L')) #you can pass multiple arguments in single line
+im2 = np.array(Image.open('test2.jpeg').convert('L')) #you can pass multiple arguments in single line
 
 grey_image2 = Image.fromarray(im2).save('test_grey2.png')
     
